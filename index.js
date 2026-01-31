@@ -1,6 +1,7 @@
 
-for (let i = 0; i < document.querySelectorAll('.drum').length; i++) {
-    document.querySelectorAll('.drum')[i].addEventListener("click", function () {
+const drums = document.querySelectorAll('.drum');
+for (let i = 0; i < drums.length; i++) {
+    drums[i].addEventListener("click", function () {
         let btnValue = this.innerHTML; // Get the button's innerHTML
         playSound(btnValue);
     });
